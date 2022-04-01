@@ -35,7 +35,13 @@
 
 
 def one(input1, input2):
-    return ""
+    if len(input1) < len(input2):
+        return input2
+    if len(input1) > len(input2):
+        return input1
+    if len(input1) == len(input2):
+        return input1 + " " + input2 
+
 
    # <QUESTION 2>
 
@@ -61,7 +67,12 @@ def one(input1, input2):
 
 
 def two(input):
-    return ""
+    new_string = input.split(",", "bert")
+    pass
+print(two('bertclivebert'))
+
+
+
 
 
     # <QUESTION 3>
@@ -85,7 +96,18 @@ def two(input):
 
 
 def three(arg1):
-    return ""
+    if arg1%5==0 and arg1%3==0:
+        return "fizzbuzz"
+    if arg1%3==0:
+        return "fizz"
+    if arg1%5==0:
+        return "buzz"
+    if arg1%5!=0:
+        return "null"
+    if arg1%3!=0:
+        return "null"
+
+
 
     # <QUESTION 4>
 
@@ -111,7 +133,8 @@ def three(arg1):
 
 
 def four(arg1):
-    return ""
+   pass
+
 
     # <QUESTION 5>
 
@@ -140,7 +163,10 @@ def four(arg1):
 
 
 def five(input):
-    return ""
+    new_string = input.split(',')
+    if new_string[2]=="True":
+        return
+    
 
     # <QUESTION 6>
 
@@ -161,7 +187,12 @@ def five(input):
 
 
 def six(input):
-    return ""
+    if "cei" in range(input):
+        return True
+    else:
+        return False
+    
+
 
     # <QUESTION 7>
 
@@ -179,7 +210,18 @@ def six(input):
 
 
 def seven(input):
-    return ""
+    vowels = 0
+    input = input.lower()
+    for i in input:
+     if i=="a" or i=="i" or i=="e" or i=="u" or i=="a":
+        return vowels == vowels + 1
+    return vowels
+
+
+         
+
+
+
 
     # <QUESTION 8>
 
@@ -198,7 +240,8 @@ def seven(input):
 
 
 def eight(input):
-    return ""
+    pass   
+
 
     # <QUESTION 9>
 
@@ -220,7 +263,8 @@ def eight(input):
 
 
 def nine(inputString, char):
-    return ""
+    inputString = inputString.split()
+
 
     # <QUESTION 10>
 
@@ -241,4 +285,8 @@ def nine(inputString, char):
 
 
 def ten(string, int, char):
-    return ""
+    if len(string) < int:
+        return False
+    elif (len(string) > int):
+        return True
+
